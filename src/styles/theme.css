@@ -1,0 +1,13 @@
+
+body {
+  background: radial-gradient(circle at top, #0b0616, #05010d 70%);
+  color: #fff;
+  font-family: Inter, system-ui, sans-serif;
+}
+.filters { display:flex; gap:12px; margin:16px 0; }
+.dashboard-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+@media(max-width:1024px){.dashboard-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:640px){.dashboard-grid{grid-template-columns:1fr;}.filters{flex-direction:column;}}
+.card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:16px;}
+.gradient-border{padding:1px;border-radius:18px;background:linear-gradient(135deg,#5227ff,#ff9ffc,#b19eff);}
+.gradient-border .inner{border-radius:16px;}
